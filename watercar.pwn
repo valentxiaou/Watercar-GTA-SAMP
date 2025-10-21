@@ -31,9 +31,9 @@ public OnPlayerUpdate(playerid)
             new Float:x, Float:y, Float:z;
             GetVehiclePos(vehicleid, x, y, z);
 
-            if (z < 0.0) // Kalau menyentuh air
+            if (z < 0.0) // if it touches water
             {
-                SetVehiclePos(vehicleid, x, y, 0.5); // Biar naik ke permukaan
+                SetVehiclePos(vehicleid, x, y, 0.5); // when it rises to the ground surface
             }
         }
     }
